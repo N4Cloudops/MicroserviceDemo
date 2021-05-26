@@ -41,6 +41,7 @@ import (
 const (
 	listenPort  = "5050"
 	usdCurrency = "USD"
+	fooBar = "mince"
 )
 
 var log *logrus.Logger
