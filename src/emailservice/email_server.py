@@ -48,7 +48,6 @@ logger = getJSONLogger('emailservice-server')
 # except:
 #     pass
 
-# Loads confirmation email template from file
 env = Environment(
     loader=FileSystemLoader('templates'),
     autoescape=select_autoescape(['html', 'xml'])
