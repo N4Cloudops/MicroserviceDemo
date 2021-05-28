@@ -15,6 +15,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Define version based on SemVer
+      uses: K-Phoen/semver-release-action@v1.2.0
+      with:
+        # Branch to tag
+        release_branch: # default is master
+        # Release strategy
+        release_strategy:
+        # Tag to use
+        tag: early-adopter
     - uses: actions/checkout@v2
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
